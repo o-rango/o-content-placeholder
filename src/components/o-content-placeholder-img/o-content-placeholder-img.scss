@@ -1,0 +1,47 @@
+:host{
+
+  --o-content-placeholders-img-size : 55px;
+  --o-content-placeholder-img-margin : 5px;
+  --o-content-placeholder-img-color-primary : #f5f5f5;
+  --o-content-placeholder-img-color-secundary : #ccc;
+
+  .o-content-placeholder-img {
+    pointer-events: none;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    margin:  var(--o-content-placeholder-img-margin);
+    height: var(--o-content-placeholders-img-size);
+    width: var(--o-content-placeholders-img-size);
+    background : var(--o-content-placeholder-img-color-primary);
+   }
+
+  .o-content-placeholder-img-animate {
+    background: linear-gradient(90deg, var(--o-content-placeholder-img-color-primary ), var(--o-content-placeholder-img-color-secundary),var(--o-content-placeholder-img-color-primary ), var(--o-content-placeholder-img-color-secundary));
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: loading;
+    animation-timing-function: linear;
+    background-size: 400vw 400%;
+  }
+
+  .o-content-placeholder-img-circle {
+    border-radius:  50%;
+  }
+
+  @keyframes loading {
+  	0% {
+      background-position: 90%;
+      opacity: 1;
+    }
+    50% {
+      background-position:  50%;
+      opacity: 1;
+    }
+    100% {
+      background-position: 10%;
+      opacity: 1;
+    }
+  }
+}

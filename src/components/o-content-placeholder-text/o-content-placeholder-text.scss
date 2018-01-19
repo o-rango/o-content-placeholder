@@ -1,0 +1,31 @@
+
+:host{
+  --o-content-placeholders-line-height : 1em;
+  --o-content-placeholder-line-margin : 0.5em;
+  --o-content-placeholder-line-color-primary : #ccc;
+  --o-content-placeholder-line-color-secundary : #eee;
+
+
+  @keyframes PlaceholdersAnimation {
+  0% {
+    transform: translate3d(-30%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+
+
+  .o-content-placeholder-text-line {
+    height: var( --o-content-placeholders-line-height);
+    margin : var(--o-content-placeholder-line-margin);
+    background-color:var(--o-content-placeholder-line-color-primary);
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: PlaceholdersAnimation;
+    animation-timing-function: linear;
+  }
+}
