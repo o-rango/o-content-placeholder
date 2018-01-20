@@ -11,7 +11,7 @@
 
 
 
-### Demo Version
+### Demo Version [Demo](https://o-rango.github.io/o-content-placeholder/);
 ![](./skeleton-placeholder.gif)
 
 
