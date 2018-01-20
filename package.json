@@ -1,7 +1,7 @@
 {
-  "name": "o-content-placeholder",
-  "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "name": "@orango/o-content-placeholder",
+  "version": "0.0.1-beta",
+  "description": "O-RANGO customizable component placeholder",
   "main": "dist/o-content-placeholder.js",
   "types": "dist/types/index.d.ts",
   "keywords": [
@@ -46,14 +46,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/o-rango/o-content-placeholder.git"
   },
   "author": "Ionic Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/o-rango/o-content-placeholder"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://github.com/o-rango/o-content-placeholder",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"

@@ -10,3 +10,8 @@
 ### Simple and customizable content placeholder built as web component with Stenciljs :metal:
 
 
+
+### Demo Version
+![](./skeleton-placeholder.gif);
+
+
