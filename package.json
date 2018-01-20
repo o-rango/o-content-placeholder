@@ -4,17 +4,33 @@
   "description": "Stencil Component Starter",
   "main": "dist/o-content-placeholder.js",
   "types": "dist/types/index.d.ts",
+  "keywords": [
+    "web components",
+    "components",
+    "content placeholder",
+    "skeleton",
+    "loading",
+    "loader",
+    "stenciljs",
+    "angular",
+    "react",
+    "fake loader",
+    "placeholder"
+  ],
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
   ],
   "browser": "dist/o-content-placeholder.js",
   "scripts": {
+    "release": "standard-version",
+    "publish": "git push --follow-tags origin master; npm publish --access=public",
+    "changelog": "conventional-changelog -p  -i CHANGELOG.md -s -r 0",
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
     "start": "npm run dev",
-    "test": "jest --no-cache",
+    "test": "jest --no-cache --coverage",
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
@@ -24,7 +40,9 @@
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
     "@types/jest": "^22.0.1",
-    "jest": "^22.1.2"
+    "coveralls": "^3.0.0",
+    "jest": "^22.1.2",
+    "standard-version": "^4.3.0"
   },
   "repository": {
     "type": "git",

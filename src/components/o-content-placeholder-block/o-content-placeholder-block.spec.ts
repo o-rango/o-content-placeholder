@@ -1,7 +1,7 @@
 import { flush, render } from '@stencil/core/testing';
-import { ContentPlaceholder } from './o-content-placeholder';
+import { ContentPlaceholder } from './o-content-placeholder-block';
 
-describe('o-content-placeholder', () => {
+describe('o-content-placeholder-block', () => {
   it('should build', () => {
     expect(new ContentPlaceholder()).toBeTruthy();
   });
@@ -11,31 +11,8 @@ describe('o-content-placeholder', () => {
     beforeEach(async () => {
       element = await render({
         components: [ContentPlaceholder],
-        html: '<o-content-placeholder></o-content-placeholder>'
+        html: '<o-content-placeholder-block></o-content-placeholder-block>'
       });
-    });
-
-    it('should work without parameters', () => {
-      expect(element.textContent.trim()).toEqual('Hello, World! I\'m');
-    });
-
-    it('should work with a first name', async () => {
-      element.first = 'Peter';
-      await flush(element);
-      expect(element.textContent.trim()).toEqual('Hello, World! I\'m Peter');
-    });
-
-    it('should work with a last name', async () => {
-      element.last = 'Parker';
-      await flush(element);
-      expect(element.textContent.trim()).toEqual('Hello, World! I\'m  Parker');
-    });
-
-    it('should work with both a first and a last name', async () => {
-      element.first = 'Peter'
-      element.last = 'Parker';
-      await flush(element);
-      expect(element.textContent.trim()).toEqual('Hello, World! I\'m Peter Parker');
     });
   });
 });
