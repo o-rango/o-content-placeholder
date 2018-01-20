@@ -6,31 +6,35 @@
 
 
 import {
-  ContentPlaceholder as OContentPlaceholderHead
-} from './components/o-content-placeholder-head/o-content-placeholder-head';
+  ContentPlaceholder as OContentPlaceholderBlock
+} from './components/o-content-placeholder-block/o-content-placeholder-block';
 
 declare global {
-  interface HTMLOContentPlaceholderHeadElement extends OContentPlaceholderHead, HTMLElement {
+  interface HTMLOContentPlaceholderBlockElement extends OContentPlaceholderBlock, HTMLElement {
   }
-  var HTMLOContentPlaceholderHeadElement: {
-    prototype: HTMLOContentPlaceholderHeadElement;
-    new (): HTMLOContentPlaceholderHeadElement;
+  var HTMLOContentPlaceholderBlockElement: {
+    prototype: HTMLOContentPlaceholderBlockElement;
+    new (): HTMLOContentPlaceholderBlockElement;
   };
   interface HTMLElementTagNameMap {
-    "o-content-placeholder-head": HTMLOContentPlaceholderHeadElement;
+    "o-content-placeholder-block": HTMLOContentPlaceholderBlockElement;
   }
   interface ElementTagNameMap {
-    "o-content-placeholder-head": HTMLOContentPlaceholderHeadElement;
+    "o-content-placeholder-block": HTMLOContentPlaceholderBlockElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "o-content-placeholder-head": JSXElements.OContentPlaceholderHeadAttributes;
+      "o-content-placeholder-block": JSXElements.OContentPlaceholderBlockAttributes;
     }
   }
   namespace JSXElements {
-    export interface OContentPlaceholderHeadAttributes extends HTMLAttributes {
-      first?: string;
-      last?: string;
+    export interface OContentPlaceholderBlockAttributes extends HTMLAttributes {
+      animate?: boolean;
+      lineHeight?: number;
+      lines?: number;
+      margin?: number;
+      randomSize?: boolean;
+      rounded?: boolean;
     }
   }
 }
@@ -63,69 +67,6 @@ declare global {
       animate?: boolean;
       format?: 'circle' | 'square';
       size?: number;
-    }
-  }
-}
-
-
-import {
-  ContentPlaceholder as OContentPlaceholderText
-} from './components/o-content-placeholder-text/o-content-placeholder-text';
-
-declare global {
-  interface HTMLOContentPlaceholderTextElement extends OContentPlaceholderText, HTMLElement {
-  }
-  var HTMLOContentPlaceholderTextElement: {
-    prototype: HTMLOContentPlaceholderTextElement;
-    new (): HTMLOContentPlaceholderTextElement;
-  };
-  interface HTMLElementTagNameMap {
-    "o-content-placeholder-text": HTMLOContentPlaceholderTextElement;
-  }
-  interface ElementTagNameMap {
-    "o-content-placeholder-text": HTMLOContentPlaceholderTextElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      "o-content-placeholder-text": JSXElements.OContentPlaceholderTextAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface OContentPlaceholderTextAttributes extends HTMLAttributes {
-      lines?: number;
-    }
-  }
-}
-
-
-import {
-  ContentPlaceholder as OContentPlaceholder
-} from './components/o-content-placeholder/o-content-placeholder';
-
-declare global {
-  interface HTMLOContentPlaceholderElement extends OContentPlaceholder, HTMLElement {
-  }
-  var HTMLOContentPlaceholderElement: {
-    prototype: HTMLOContentPlaceholderElement;
-    new (): HTMLOContentPlaceholderElement;
-  };
-  interface HTMLElementTagNameMap {
-    "o-content-placeholder": HTMLOContentPlaceholderElement;
-  }
-  interface ElementTagNameMap {
-    "o-content-placeholder": HTMLOContentPlaceholderElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      "o-content-placeholder": JSXElements.OContentPlaceholderAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface OContentPlaceholderAttributes extends HTMLAttributes {
-      active?: boolean;
-      animated?: boolean;
-      centered?: boolean;
-      rounded?: boolean;
     }
   }
 }

@@ -2,8 +2,8 @@
 
   --o-content-placeholders-img-size : 55px;
   --o-content-placeholder-img-margin : 5px;
-  --o-content-placeholder-img-color-primary : #f5f5f5;
-  --o-content-placeholder-img-color-secundary : #ccc;
+  --o-content-placeholder-img-color-primary : #ebebeb;
+  --o-content-placeholder-img-color-secundary : #5b5b5b;
 
   .o-content-placeholder-img {
     pointer-events: none;
@@ -13,35 +13,34 @@
     margin:  var(--o-content-placeholder-img-margin);
     height: var(--o-content-placeholders-img-size);
     width: var(--o-content-placeholders-img-size);
-    background : var(--o-content-placeholder-img-color-primary);
+    background-color : var(--o-content-placeholder-img-color-primary);
+    display: block;
    }
 
   .o-content-placeholder-img-animate {
-    background: linear-gradient(90deg, var(--o-content-placeholder-img-color-primary ), var(--o-content-placeholder-img-color-secundary),var(--o-content-placeholder-img-color-primary ), var(--o-content-placeholder-img-color-secundary));
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: loading;
-    animation-timing-function: linear;
-    background-size: 400vw 400%;
+    position: absolute;
+    display: block;
+    height: inherit;
+    left: 0;
+    top: 0;
+    width:70%;
+    will-change: transform;
+    animation: animatePlaceholder 1.2s linear infinite;
+    background: linear-gradient(to right, rgba(15,15,15,0) 0%,rgba(219,219,219,0.5) 50%,rgba(255,255,255,0) 100%);
   }
 
   .o-content-placeholder-img-circle {
     border-radius:  50%;
   }
 
-  @keyframes loading {
-  	0% {
-      background-position: 90%;
-      opacity: 1;
+
+  @keyframes animatePlaceholder {
+    0% {
+      transform: translateX(-50%);
     }
-    50% {
-      background-position:  50%;
-      opacity: 1;
-    }
+
     100% {
-      background-position: 10%;
-      opacity: 1;
+      transform: translateX(300%);
     }
   }
 }

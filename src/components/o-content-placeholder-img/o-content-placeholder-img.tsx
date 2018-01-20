@@ -19,11 +19,13 @@ export class ContentPlaceholderImg {
   render() {
     const cssStyles : CssClassMap = {
       'o-content-placeholder-img' : true,
-      'o-content-placeholder-img-animate' : this.animate,
       'o-content-placeholder-img-circle' : this.format === 'circle'
     }
+
     return (
-       <div class={cssStyles}/>
+       <div class={cssStyles}>
+         {this.animate ? <span class="o-content-placeholder-img-animate"></span> : ''}
+       </div>
     );
   }
 }
