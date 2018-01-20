@@ -66,5 +66,8 @@
       "json",
       "jsx"
     ]
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
