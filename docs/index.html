@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <title>Stencil Component Starter</title>
+    <script src="https://unpkg.com/@o-rango/orango-demo-tools/dist/orango-demo-tools.js"></script>
+    <script src="/build/o-content-placeholder.js"></script>
+
+  </head>
+
+  <body>
+
+    <o-demo-bar name="Content Placeholder">
+      <o-demo-case name="Skeleton">
+        <!--includes  <script src="/build/o-content-placeholder.js"></script> includes-->
+        <div class="container">
+          <style>
+            .container {
+              background-color: white;
+              width: 100%;
+              text-align: center;
+              padding: 10 15 15 10;
+            }
+
+          </style>
+          <o-content-placeholder-img size="55" animate="true" format="square"></o-content-placeholder-img>
+          <o-content-placeholder-block rounded="true" line-height="15" margin="6" animate="true" lines="3"></o-content-placeholder-block>
+        </div>
+
+        <div class="container">
+          <style>
+            .container {
+              background-color: white;
+              width: 100%;
+              text-align: center;
+              padding: 10 15 15 10;
+              margin-top: 20px;
+            }
+
+          </style>
+          <o-content-placeholder-img size="55" animate="false" format="circle"></o-content-placeholder-img>
+          <o-content-placeholder-block line-height="10" random-size="true" animate="true" lines="5"></o-content-placeholder-block>
+        </div>
+        <div class="container">
+          <style>
+            .container {
+              background-color: white;
+              width: 100%;
+              text-align: center;
+              padding: 10 15 15 10;
+              margin-top: 20px;
+            }
+
+          </style>
+           <div>
+
+           </div>
+           <o-content-placeholder-block line-height="80" random-size="true" animate="true" lines="1"></o-content-placeholder-block>
+          <o-content-placeholder-block line-height="10" random-size="true" animate="true" lines="5"></o-content-placeholder-block>
+        </div>
+      </o-demo-case>
+    </o-demo-bar>
+
+    <script>
+      if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+        // auto-unregister service worker during dev mode
+        navigator.serviceWorker.ready.then(function (registration) {
+          registration.unregister().then(function () {
+            location.reload(true)
+          });
+        });
+      }
+
+    </script>
+
+  </body>
+
+</html>

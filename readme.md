@@ -12,6 +12,6 @@
 
 
 ### Demo Version
-![](./skeleton-placeholder.gif);
+![](./skeleton-placeholder.gif)
 
 
