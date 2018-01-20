@@ -1,6 +1,6 @@
 {
   "name": "@orango/o-content-placeholder",
-  "version": "0.0.1-beta",
+  "version": "0.0.2",
   "description": "O-RANGO customizable component placeholder",
   "main": "dist/o-content-placeholder.js",
   "types": "dist/types/index.d.ts",
