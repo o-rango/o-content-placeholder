@@ -4,8 +4,8 @@
     [
       "o-content-placeholder-block",
       [
-        "o-content-placeholder-block",
-        null
+        "xdhp6uex",
+        "n67ukts4"
       ],
       1,
       [
@@ -55,8 +55,8 @@
     [
       "o-content-placeholder-img",
       [
-        "o-content-placeholder-block",
-        null
+        "xdhp6uex",
+        "n67ukts4"
       ],
       1,
       [
@@ -86,7 +86,7 @@
       1
     ]
   ],
-  "core": "o-content-placeholder.core.js",
-  "coreSsr": "o-content-placeholder.core.ssr.js",
-  "corePolyfilled": "es5-build-disabled.js"
+  "core": "o-content-placeholder.earoxtvm.js",
+  "coreSsr": "o-content-placeholder.ggyxqmtf.js",
+  "corePolyfilled": "o-content-placeholder.cfcspxgl.js"
 }

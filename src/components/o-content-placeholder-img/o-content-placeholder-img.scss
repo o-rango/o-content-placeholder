@@ -25,8 +25,8 @@
     top: 0;
     width:70%;
     will-change: transform;
-    animation: animatePlaceholder 1.2s linear infinite;
-    background: linear-gradient(to right, rgba(15,15,15,0) 0%,rgba(219,219,219,0.5) 50%,rgba(255,255,255,0) 100%);
+    animation: animatePlaceholder 1.4s linear infinite;
+    background: linear-gradient(to right, rgba(172, 172, 172, 0) 0%,rgba(219,219,219,0.2) 50%,rgba(233, 233, 233, 0.2) 100%);
   }
 
   .o-content-placeholder-img-circle {
