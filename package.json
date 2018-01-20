@@ -1,6 +1,6 @@
 {
   "name": "@o-rango/o-content-placeholder",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "O-RANGO customizable component placeholder",
   "main": "dist/o-content-placeholder.js",
   "types": "dist/types/index.d.ts",
