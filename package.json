@@ -41,7 +41,7 @@
     "@stencil/utils": "latest",
     "@types/jest": "22.1.0",
     "coveralls": "3.0.0",
-    "jest": "22.1.4",
+    "jest": "22.2.1",
     "standard-version": "4.3.0"
   },
   "repository": {
