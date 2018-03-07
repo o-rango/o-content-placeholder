@@ -6,6 +6,7 @@ pipeline {
         sh 'npm i -g lerna'
         sh 'npm i'
         sh 'npm run init '
+        node(label: 'node-8.4.0')
       }
     }
     stage('Lint') {
