@@ -1,8 +1,8 @@
 # npmignore
 
-www/build
-docs
-coverage
+www/
+docs/
+coverage/
 *~
 *.sw[mnpcod]
 *.log
