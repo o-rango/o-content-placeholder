@@ -4,70 +4,91 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
-
-import {
-  ContentPlaceholder as OContentPlaceholderBlock
-} from './components/o-content-placeholder-block/o-content-placeholder-block';
+import '@stencil/core';
 
 declare global {
-  interface HTMLOContentPlaceholderBlockElement extends OContentPlaceholderBlock, HTMLElement {
+  namespace JSX {
+    interface Element {}
+    export interface IntrinsicElements {}
+  }
+  namespace JSXElements {}
+
+  interface HTMLStencilElement extends HTMLElement {
+    componentOnReady(): Promise<this>;
+    componentOnReady(done: (ele?: this) => void): void;
+
+    forceUpdate(): void;
+  }
+
+  interface HTMLAttributes {}
+}
+
+
+declare global {
+  interface HTMLOContentPlaceholderBlockElement extends HTMLStencilElement {
+    'animate': boolean;
+    'lineHeight': number;
+    'lines': number;
+    'margin': number;
+    'randomSize': boolean;
+    'rounded': boolean;
   }
   var HTMLOContentPlaceholderBlockElement: {
     prototype: HTMLOContentPlaceholderBlockElement;
     new (): HTMLOContentPlaceholderBlockElement;
   };
   interface HTMLElementTagNameMap {
-    "o-content-placeholder-block": HTMLOContentPlaceholderBlockElement;
+    'o-content-placeholder-block': HTMLOContentPlaceholderBlockElement;
   }
   interface ElementTagNameMap {
-    "o-content-placeholder-block": HTMLOContentPlaceholderBlockElement;
+    'o-content-placeholder-block': HTMLOContentPlaceholderBlockElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "o-content-placeholder-block": JSXElements.OContentPlaceholderBlockAttributes;
+      'o-content-placeholder-block': JSXElements.OContentPlaceholderBlockAttributes;
     }
   }
   namespace JSXElements {
     export interface OContentPlaceholderBlockAttributes extends HTMLAttributes {
-      animate?: boolean;
-      lineHeight?: number;
-      lines?: number;
-      margin?: number;
-      randomSize?: boolean;
-      rounded?: boolean;
+      'animate'?: boolean;
+      'lineHeight'?: number;
+      'lines'?: number;
+      'margin'?: number;
+      'randomSize'?: boolean;
+      'rounded'?: boolean;
     }
   }
 }
 
 
-import {
-  ContentPlaceholderImg as OContentPlaceholderImg
-} from './components/o-content-placeholder-img/o-content-placeholder-img';
-
 declare global {
-  interface HTMLOContentPlaceholderImgElement extends OContentPlaceholderImg, HTMLElement {
+  interface HTMLOContentPlaceholderImgElement extends HTMLStencilElement {
+    'animate': boolean;
+    'format': 'circle' | 'square';
+    'size': number;
   }
   var HTMLOContentPlaceholderImgElement: {
     prototype: HTMLOContentPlaceholderImgElement;
     new (): HTMLOContentPlaceholderImgElement;
   };
   interface HTMLElementTagNameMap {
-    "o-content-placeholder-img": HTMLOContentPlaceholderImgElement;
+    'o-content-placeholder-img': HTMLOContentPlaceholderImgElement;
   }
   interface ElementTagNameMap {
-    "o-content-placeholder-img": HTMLOContentPlaceholderImgElement;
+    'o-content-placeholder-img': HTMLOContentPlaceholderImgElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "o-content-placeholder-img": JSXElements.OContentPlaceholderImgAttributes;
+      'o-content-placeholder-img': JSXElements.OContentPlaceholderImgAttributes;
     }
   }
   namespace JSXElements {
     export interface OContentPlaceholderImgAttributes extends HTMLAttributes {
-      animate?: boolean;
-      format?: 'circle' | 'square';
-      size?: number;
+      'animate'?: boolean;
+      'format'?: 'circle' | 'square';
+      'size'?: number;
     }
   }
 }
 
+declare global { namespace JSX { interface StencilJSX {} } }
