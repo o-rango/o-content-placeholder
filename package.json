@@ -1,9 +1,14 @@
 {
   "name": "@o-rango/o-content-placeholder",
-  "version": "0.0.6",
+  "version": "0.1.1",
   "description": "O-RANGO customizable component placeholder",
+  "browser": "dist/o-content-placeholder.js",
   "main": "dist/o-content-placeholder.js",
   "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
   "keywords": [
     "web components",
     "components",
@@ -17,11 +22,6 @@
     "fake loader",
     "placeholder"
   ],
-  "collection": "dist/collection/collection-manifest.json",
-  "files": [
-    "dist/"
-  ],
-  "browser": "dist/o-content-placeholder.js",
   "scripts": {
     "release": "standard-version",
     "publish": "git push --follow-tags origin master; npm run publish --access public --scope=@o-rango",
@@ -33,15 +33,14 @@
     "test": "jest --no-cache --coverage",
     "test.watch": "jest --watch --no-cache"
   },
-  "dependencies": {
-    "@stencil/core": "next"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@stencil/core": "next",
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
-    "@types/jest": "22.1.3",
+    "@types/jest": "22.2.2",
     "coveralls": "3.0.0",
-    "jest": "22.2.1",
+    "jest": "22.4.3",
     "standard-version": "4.3.0"
   },
   "repository": {

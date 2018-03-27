@@ -1,8 +1,8 @@
 exports.config = {
   namespace: 'o-content-placeholder',
-  generateDistribution: true,
-  bundles: [
-    { components: [ 'o-content-placeholder-img' , 'o-content-placeholder-block'] }
+  outputTargets:[
+    { type: 'dist' },
+    { type: 'www' }
   ]
 };
 

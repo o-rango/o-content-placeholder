@@ -1,8 +1,9 @@
-import { Component, Prop,Element , CssClassMap } from '@stencil/core';
+import { Component, Prop,Element} from '@stencil/core';
+import {CssClassMap} from '../utils';
 
 @Component({
   tag: 'o-content-placeholder-block',
-  styleUrl: 'o-content-placeholder-block.scss',
+  styleUrl: 'o-content-placeholder-block.css',
   shadow: true
 })
 export class ContentPlaceholder {
