@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/o-rango/o-content-placeholder/compare/v0.0.6...v0.1.0) (2018-03-27)
+
+
+### Bug Fixes
+
+* **MapClassName:** add removed export from stencil chore ([29300e3](https://github.com/o-rango/o-content-placeholder/commit/29300e3))
+
+
+### Features
+
+* **docs:** remove build from stencil ([2505cf9](https://github.com/o-rango/o-content-placeholder/commit/2505cf9))
+* **placelhoder:** update component ([415b4ab](https://github.com/o-rango/o-content-placeholder/commit/415b4ab))
+
+
+
 <a name="0.0.6"></a>
 ## [0.0.6](https://github.com/o-rango/o-content-placeholder/compare/v0.0.5...v0.0.6) (2018-01-20)
 

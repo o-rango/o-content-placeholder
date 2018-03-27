@@ -1,9 +1,14 @@
 {
   "name": "@o-rango/o-content-placeholder",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "O-RANGO customizable component placeholder",
+  "browser": "dist/o-content-placeholder.js",
   "main": "dist/o-content-placeholder.js",
   "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
   "keywords": [
     "web components",
     "components",
@@ -17,11 +22,6 @@
     "fake loader",
     "placeholder"
   ],
-  "collection": "dist/collection/collection-manifest.json",
-  "files": [
-    "dist/"
-  ],
-  "browser": "dist/o-content-placeholder.js",
   "scripts": {
     "release": "standard-version",
     "publish": "git push --follow-tags origin master; npm run publish --access public --scope=@o-rango",
