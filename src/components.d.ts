@@ -26,7 +26,7 @@ declare global {
 
 declare global {
   interface HTMLOContentPlaceholderBlockElement extends HTMLStencilElement {
-    'animate': boolean;
+    'animation': boolean;
     'lineHeight': number;
     'lines': number;
     'margin': number;
@@ -50,7 +50,7 @@ declare global {
   }
   namespace JSXElements {
     export interface OContentPlaceholderBlockAttributes extends HTMLAttributes {
-      'animate'?: boolean;
+      'animation'?: boolean;
       'lineHeight'?: number;
       'lines'?: number;
       'margin'?: number;
@@ -63,7 +63,7 @@ declare global {
 
 declare global {
   interface HTMLOContentPlaceholderImgElement extends HTMLStencilElement {
-    'animate': boolean;
+    'animation': boolean;
     'format': 'circle' | 'square';
     'size': number;
   }
@@ -84,7 +84,7 @@ declare global {
   }
   namespace JSXElements {
     export interface OContentPlaceholderImgAttributes extends HTMLAttributes {
-      'animate'?: boolean;
+      'animation'?: boolean;
       'format'?: 'circle' | 'square';
       'size'?: number;
     }

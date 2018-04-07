@@ -8,7 +8,7 @@ import {CssClassMap} from '../utils';
 export class ContentPlaceholderImg {
   @Element() el: HTMLElement;
 
-  @Prop() animate: boolean = false;
+  @Prop() animation: boolean = false;
   @Prop() format: 'circle' | 'square' = 'square';
   @Prop() size: number = 55;
 
@@ -24,7 +24,7 @@ export class ContentPlaceholderImg {
 
     return (
        <div class={cssStyles}>
-         {this.animate ? <span class="o-content-placeholder-img-animate"></span> : ''}
+         {this.animation ? <span class="o-content-placeholder-img-animate"></span> : ''}
        </div>
     );
   }

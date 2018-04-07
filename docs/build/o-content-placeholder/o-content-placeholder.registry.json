@@ -1,0 +1,15 @@
+{
+  "namespace": "OContentPlaceholder",
+  "fsNamespace": "o-content-placeholder",
+  "loader": "../o-content-placeholder.js",
+  "core": "o-content-placeholder.x3pi5dhc.js",
+  "corePolyfilled": "o-content-placeholder.unkufqif.js",
+  "components": {
+    "o-content-placeholder-block": {
+      "$": "an3syeke"
+    },
+    "o-content-placeholder-img": {
+      "$": "boufqixf"
+    }
+  }
+}

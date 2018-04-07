@@ -9,7 +9,7 @@ import {CssClassMap} from '../utils';
 export class ContentPlaceholder {
   @Element() el: HTMLElement;
 
-  @Prop() animate: boolean = false;
+  @Prop() animation: boolean = false;
   @Prop() lines: number = 1;
   @Prop() lineHeight: number = 15;
   @Prop() margin: number = 5;
@@ -38,7 +38,7 @@ export class ContentPlaceholder {
       {Array.apply(null, Array(this.lines)).map(function(){
           return (
             <div class={cssClasses} style={{width: size()}}>
-               {this.animate ? <span class="o-content-placeholder-block-animate"></span> : ''}
+               {this.animation ? <span class="o-content-placeholder-block-animate"></span> : ''}
             </div>
           );
       }, this)}

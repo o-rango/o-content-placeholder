@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "release": "standard-version",
-    "publish-component": "git push --follow-tags origin master; npm run publish --access public --scope=@o-rango",
+    "publish-component": "git push --follow-tags origin master &&  npm run publish --access public --scope=@o-rango",
     "changelog": "conventional-changelog -p  -i CHANGELOG.md -s -r 0",
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
