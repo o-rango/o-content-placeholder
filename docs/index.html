@@ -1,4 +1,15 @@
-<!DOCTYPE html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>o-content-placeholder</title> <script src="https://unpkg.com/@o-rango/orango-demo-tools/dist/orango-demo-tools.js"></script> </head> <body> <o-demo-bar name="Demo o-content-placeholder"> <o-demo-case name="Placeholders with Circle Avatar - Animated"> <template>
+<!DOCTYPE html><html dir="ltr" lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>o-content-placeholder</title>
+  <script src="https://unpkg.com/@o-rango/orango-demo-tools/dist/orango-demo-tools.js"></script>
+  </head>
+
+  <body>
+
+      <o-demo-bar name="Demo o-content-placeholder">
+          <o-demo-case name="Placeholders with Circle Avatar - Animated">
+              <template>
               <script src="./build/o-content-placeholder.js"></script>
               <style>
                   .container {
@@ -23,7 +34,11 @@
                     <o-content-placeholder-img size="55" animation="true" format="circle"></o-content-placeholder-img>
                     <o-content-placeholder-block rounded="true" line-height="50" margin="6" animation="true" lines="1"></o-content-placeholder-block>
                 </div>
-              </template> </o-demo-case> <o-demo-case name="Placeholders with Square Avatar - Animated"> <template>
+              </template>
+        </o-demo-case>
+
+        <o-demo-case name="Placeholders with Square Avatar - Animated">
+            <template>
             <script src="./build/o-content-placeholder.js"></script>
             <style>
                 .container {
@@ -48,7 +63,12 @@
                   <o-content-placeholder-img size="55" animation="true" format="squared"></o-content-placeholder-img>
                   <o-content-placeholder-block line-height="50" margin="6" animation="true" lines="1"></o-content-placeholder-block>
               </div>
-            </template> </o-demo-case> <o-demo-case name="Random Size - no animation"> <template>
+            </template>
+      </o-demo-case>
+
+
+      <o-demo-case name="Random Size - no animation">
+          <template>
           <script src="./build/o-content-placeholder.js"></script>
           <style>
               .container {
@@ -73,4 +93,23 @@
                 <o-content-placeholder-block line-height="50" random-size="true" lines="1"></o-content-placeholder-block>
                 <o-content-placeholder-block line-height="10" random-size="true" lines="5"></o-content-placeholder-block>
             </div>
-          </template> </o-demo-case> </o-demo-bar> </body></html>
+          </template>
+    </o-demo-case>
+
+
+    </o-demo-bar>
+
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      // auto-unregister service worker during dev mode
+      navigator.serviceWorker.getRegistration().then(function(registration) {
+        if (registration) {
+          registration.unregister().then(function() { location.reload(true) });
+        }
+      });
+    }
+  </script>
+
+
+
+</body></html>
