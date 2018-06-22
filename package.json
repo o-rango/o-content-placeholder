@@ -38,8 +38,8 @@
     "@stencil/core": "latest",
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
-    "@types/jest": "22.2.3",
-    "coveralls": "3.0.0",
+    "@types/jest": "22.2.2",
+    "coveralls": "3.0.1",
     "jest": "22.4.3",
     "standard-version": "4.3.0"
   },
