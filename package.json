@@ -1,6 +1,6 @@
 {
   "name": "@o-rango/o-content-placeholder",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "O-RANGO customizable component placeholder",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
