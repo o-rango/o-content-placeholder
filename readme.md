@@ -12,6 +12,10 @@
  Simple and customizable content placeholder built as web component with Stenciljs :metal:
 ## Getting Started
 
+
+### Demo Version 
+![](./skeleton-placeholder.gif)
+
 To try this component:
 
 ```bash
@@ -23,9 +27,9 @@ npm i --save @o-rango/o-content-placeholder
 
 // Add script tag to your page
 
-<script src="./node_modules/@o-rango/orango-demo-tools/dist/o-content-placeholder.js.js"></script>
+<script src="./node_modules/@o-rango/o-content-placeholder/dist/o-content-placeholder.js"></script>
 // OR
-<script src="https://unpkg.com/@o-rango/orango-demo-tools/dist/o-content-placeholder.js.js"></script>
+<script src="https://unpkg.com/@o-rango/o-content-placeholder/dist/o-content-placeholder.js"></script>
 ```
 
 And compose your content placeholder with `<o-content-placeholder-img>`  or  `</o-content-placeholder-block>`
@@ -55,6 +59,3 @@ Properties
 @Prop() size: number = 55;
 
 ```
-
-### Demo Version 
-![](./skeleton-placeholder.gif)
