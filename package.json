@@ -41,7 +41,7 @@
     "@types/jest": "23.1.4",
     "coveralls": "3.0.2",
     "jest": "23.5.0",
-    "semver": "5.5.0",
+    "semver": "7.6.0",
     "standard-version": "4.4.0"
   },
   "repository": {
